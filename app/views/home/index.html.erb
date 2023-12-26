@@ -1,30 +1,29 @@
-<body>
-    <header>
-        <img src="">
-        <nav>
-            <a href="">Профиль</a>
-            <a href="">Лента</a>
-            <a href="login.html.erb">Вход</a>
+<header>
+    <img src="">
+    <nav>
+        <a href="profile.html.erb">Профиль</a>
+        <a href="index.html.erb">Лента</a>
+        <a href="login.html.erb">Вход</a>
         </nav>
-    </header>
-    <main>
-        <form method="GET">
-            <label for="item"><i>Поиск</i></label>
-            <input type="text" name="item" value="Поиск по фильтру или нику пользователя" required>
-            <input type="submit" value="Поиск">
-        </form>
-        <div class="ribbon">
-            <div class="card">
-                <img src="">
-                <p>Description</p>
-                <a href="" style="color:black;text-decoration:none;"><h1>Nick of owner</h1></a>
-                <h3>Комментарии</h3>
-                <div class="comments">
-                    <h4>Ник пользователя</h4>
-                    <p>Comment</p>
-                </div>
+</header>
+<main>
+    <form method="GET">
+        <label for="item"><i>Поиск</i></label>
+        <input type="text" name="item" value="Поиск по фильтру или нику пользователя" required>
+        <input type="submit" value="Поиск">
+    </form>
+    <div class="ribbon">
+        <%- %>
+        <div class="card">
+            <img src="<%= %>">
+            <p><%= %></p>
+            <a href="" style="color:black;text-decoration:none;"><h1><%= %></h1></a>
+            <h3><%= %></h3>
+            <div class="comments">
+                <h4><%= %></h4>
+                <p><%= %></p>
             </div>
+        </div>
+        <%- end %>
     </div>
-    </main>
-</body>
-</html>
+</main>
