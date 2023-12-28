@@ -1,10 +1,10 @@
 <header>
     <img src="">
     <nav>
-        <a href="profile.html.erb">Профиль</a>
-        <a href="index.html.erb">Лента</a>
-        <a href="login.html.erb">Вход</a>
-        </nav>
+        <div> <%= link_to "Профиль", "/user" %></div>
+        <div> <%= link_to "Лента", "/" %></div>
+        <div> <%= link_to "Вход", "/auth/new" %></div>
+    </nav>
 </header>
 <main>
     <form method="GET">

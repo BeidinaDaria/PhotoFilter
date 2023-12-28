@@ -34,3 +34,12 @@ main>.ribbon{
 .card>h1{
     padding-left:50px;
 }
+
+.reg{
+    display: flex;
+    justify-content: center;
+}
+
+.reg text_field{
+    border: 1px;
+}

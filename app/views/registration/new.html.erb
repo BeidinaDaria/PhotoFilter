@@ -1,0 +1,15 @@
+<h2 class='reg'>Регистрация</h2>
+
+<div class='reg'>
+<%= form_with model: @user do |form| %>
+    <p><%= form.label :login, "Логин" %></p>
+    <p><%= form.text_field :login %>
+    <p><%= form.label :nickname, "Имя пользователя" %></p>
+    <p><%= form.text_field :nickname %>
+    <p><%= form.label :password, "Пароль" %></p>
+    <p><%= form.text_field :password %>
+    <p><%= form.label :code_word, "Кодовое слово" %></p>
+    <p><%= form.text_field :code_word %>
+    <p><%= form.submit "Зарегистрироваться" %>
+<% end %>
+</div>
