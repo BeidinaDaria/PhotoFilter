@@ -21,6 +21,29 @@
                     <input type="submit" value="Изменить">
                 </form>
             </div>
+
+            <div class="add_photo">
+            <%= form_with url: "/photos", scope: :photo do |form| %>
+                <p><%= form.label :image, "Добавить фото" %></p>
+                <p><%= form.file_field :image%></p>
+                <p><%= form.submit "Загрузить фото"%></p>
+            <% end %>
+            </div>
+            
  <%#       <%- end ->%>
     </div>
+
+    
+    
+  
+
+  <div class='form-photos'>
+  <% @photos.each do |photo| %>
+  <div>
+    <%= image_tag photo.image%>
+  </div>
+  <% end %>
+  </div>
+  
+</div>
 </main>
