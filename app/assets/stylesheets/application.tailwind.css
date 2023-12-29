@@ -10,7 +10,7 @@ header{
     margin-bottom: 3em;
 }
 nav{
-    background:#AAFFFA;
+    background:#df73ff;
     flex-direction: row;
     padding:10px;
 }
@@ -28,7 +28,8 @@ main>form{
 main>.ribbon{
     width: 90%;
     min-width: 400px;
-    background:#C4C4C4;
+    background:#eba8ff;
+    padding: 10px;
 }
 .card{
     padding:25px;
