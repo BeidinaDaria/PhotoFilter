@@ -1,14 +1,14 @@
-class PhotoController < ApplicationController
+class PhotosController < ApplicationController
     def new
         @photo = Photo.new
     end
     
     def create
-        debbuggere
-        photo = Photo.create!(photo_params)
+        #debugger
+        photo = Photo.create!(photo_params, name: params[:photo][:image].original_filename)
         photo.image.attach(params[:image])
 
-        redirect_to '/'
+        redirect_to '/user/1'
     end
     
     private

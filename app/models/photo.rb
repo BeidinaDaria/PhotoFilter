@@ -5,5 +5,5 @@ class Photo < ApplicationRecord
 
     has_one_attached :image
     
-    validates :name, :url, presence: true
+    #validates :name, :url, presence: true
 end 
